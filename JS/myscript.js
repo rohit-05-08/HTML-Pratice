@@ -1,0 +1,3 @@
+
+
+console.log("this is an example of external js")

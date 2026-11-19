@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="/Hyperlinks.html" method="get">
+<fieldset>
+<legend><b>Registration Form</b></legend>
+
+
+        <label for="u1">Username</label>
+        <input type="text" id="u1" name="uname" value="raj" maxlength="6" placeholder="Enter name" size="50" required disabled>
+        
+<br><br>
+
+        <label for="p1">password</label>
+        <input type="password" id="p1" name="password" minlength="5" placeholder="Enter password" size="50" required autofocus>
+
+<br><br>
+
+        <label for="e1">Email</label>
+        <input type="email" id="e1" name="email" value="rhuhdk@.com" maxlength="15" placeholder="Enter Email" size="50" readonly>
+
+<br><br>
+
+        <label for="add1">Enter Address</label>
+        <textarea name="address" id="add1" rows="5" cols="">CSE326</textarea>
+
+<br><br>
+
+        <label for="h1">Hobbies:</label>
+        <input type="checkbox" name="hobby" id="c1" value="cooking">
+        <label for="c1">Cooking</label>
+        <input type="checkbox" name="hobby" id="s1" value="sing" checked>
+        <label for="s1">Singing</label>
+        <input type="checkbox" name="hobby" id="pl1" value="Playing">
+        <label for="pl1">Playing</label>
+
+<br><br>
+
+        <label for="c1">cource:</label>
+        <input type="radio" name="cource" id="B.Tech" value="B.Tech" checked>
+        <label for="B.Tech">B.Tech</label>
+        <input type="radio" name="cource" id="BCA" value="BCA">
+        <label for="BCA">BCA</label>
+        <input type="radio" name="cource" id="B.Sc" value="B.Sc">
+        <label for="B.Sc">B.Sc</label>
+
+<br><br>
+
+        <label for="state1"> Choose state:</label><br>
+        <select name="state" id="state1" size="2" multiple>   USE CTRL TO SELECT MLTIPPLE OPTION
+             <option value="punjab">Punjab</option>
+             <option value="hp">Himachal</option>
+             <option value="ap">Andhra Pradesh</option>
+             <option value="rajsthan">Rajasthan</option>
+        </select>
+
+<br><br>
+
+         <label for="upload">Upload file:</label>
+         <input type="file" id="upload" name="upload" accept="image/*">
+
+<br><br>
+
+        <label for="marks">Enter marks:</label>
+        <input type="number" id="marks" max="20" min="0" step="3">
+
+<br><br>
+
+        <input type="date" id="date" name="date">
+        <input type="time" name="time" id="time">
+
+<br><br>
+
+        <input type="submit" name="submit" id="submit" value="submit form">
+        <input type="reset"  id="reset">
+        <input type="button" value="OK">
+
+</fieldset>
+</form>
+
+</body>
+</html>

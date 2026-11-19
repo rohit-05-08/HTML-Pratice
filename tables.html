@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3" cellpadding="10" cellspacing="5" bgcolor="pink" bordercolor="blue">
+        <caption>Table:1 Student marks detail</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Reg.No</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Raman</td>
+                <td>123</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Raj</td>
+                <td>126</td>
+                <td>53</td>
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td>127</td>
+                <td>90</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+<hr>
+     <table border="3" cellpadding="10" cellspacing="5" bgcolor="pink" bordercolor="blue">
+        <caption>Table:1 Student marks detail</caption>
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Reg.No</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">CSE326 </td>
+                <td>123</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>126</td>
+                <td>53</td>
+            </tr>
+            <tr>
+                <td>INT108</td>
+                <td>127</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td colspan="2">avg</td>
+                <td>66</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Average Marks</td>
+                <td>66</td>
+            </tr>
+
+        </tfoot>
+        if we will not use tfoot then also no problem . these are semantic 
+    </table>
+</body>
+</html>
