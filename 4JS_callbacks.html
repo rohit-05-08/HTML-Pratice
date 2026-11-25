@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">this is heading 1</h1>
+    <p class="p1">para 1</p>
+    <p class="p1">para 2</p>
+    <p class="p1">para 3</p>
+    <input type="button" name="btn1" id="btn1" value="submit">
+
+    <div style="width: 150px; height: 150px; background-color: aqua;" id="div1">div section</div>
+
+
+    <script>
+
+        let d1 = document.getElementById("div1")
+
+        d1.addEventListener("mouseout", ()=>{
+            d1.style.backgroundColor = "yellow"
+        })
+
+
+
+
+
+
+
+
+
+        let button1 = document.getElementById("btn1")
+        button1.onclick = function(){
+            // alert("Welcome to my page")
+
+            let h1 = document.getElementById("head1")
+            h1.innerHTML = "<i>Hello</i>"
+            // let h1 = document.getElementById("head1")
+            // h1.innerText = "<i>Hello</i>"
+
+            h1.style.color = "yellow"
+            h1.style.backgroundColor = "green"
+        }
+
+        let heading1 = document.getElementById("head1")
+        console.log(heading1.textContent)
+
+        let para = document.getElementsByClassName("p1")
+        console.log(para.length)
+        
+        let paras = document.getElementsByTagName("p")
+        console.log(paras.length)
+
+        let a1 = document.querySelectorAll(".p1")
+        console.log(a1[0].textContent)
+        console.log(a1[1].textContent)
+        console.log(a1[2].textContent)
+        
+        let a = document.querySelector(".p1")
+        console.log(a.textContent)
+
+        function calculate(a,b){
+            return a+b
+        }
+
+        function highorder(callback){
+            console.log(callback(2,3))
+        }
+
+        highorder(calculate)
+    </script>
+    
+</body>
+</html>
