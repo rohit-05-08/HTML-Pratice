@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="3" cellpadding="10" cellspacing="5" bgcolor="pink" bordercolor="blue">
+    <table border="3" cellpadding="20" cellspacing="5" bgcolor="pink" bordercolor="blue">
         <caption>Table:1 Student marks detail</caption>
         <thead>
             <tr>
@@ -77,3 +77,36 @@
     </table>
 </body>
 </html>
+
+HTML Table Tags
+
+
+1. Core table tags
+Tag	Purpose
+<table>	Container for the whole table
+<tr>	Table row
+<th>	Header cell (bold and centered by default)
+<td>	Standard data cell
+
+
+
+
+2. Structural (grouping) tags
+Tag	Purpose
+<caption>	Title or description of the table (placed right after <table>)
+<thead>	Groups the header rows
+<tbody>	Groups the main body rows
+<tfoot>	Groups the footer rows (totals, summaries)
+<colgroup>	Groups one or more columns for styling
+<col>	Defines properties for a column inside <colgroup>
+
+
+
+
+3. Important attributes
+Attribute	Used on	Purpose
+colspan	<td>, <th>	Cell spans multiple columns
+rowspan	<td>, <th>	Cell spans multiple rows
+scope	<th>	Says whether the header applies to col, row, colgroup or rowgroup (accessibility)
+headers	<td>	Links a cell to the id of its header cell(s)
+span	<col>, <colgroup>	Number of columns covered

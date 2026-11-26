@@ -10,18 +10,65 @@
     <p class="p1">para 1</p>
     <p class="p1">para 2</p>
     <p class="p1">para 3</p>
+
     <input type="button" name="btn1" id="btn1" value="submit">
 
     <div style="width: 150px; height: 150px; background-color: aqua;" id="div1">div section</div>
 
+    <form action="">
+        <input type="text" name="fname" id="fname">
+        <input type="submit" name="btn1" id="btn1">
+    </form>
+    <p id="msg"></p>
 
     <script>
+
+        let form = document.getElementById("myform]hn")
+        myform.addEventListener("submit",(e)=>){
+            letfname = document.getElementById("fname").value
+            let msg = document.getElementById("msg")
+            if(fname==""){
+                e.preventDefault()
+                msg.textContent="Please Enter name"
+                msg.style.color="red"
+            }
+            else{
+                alert("Thank you for submitting")
+            }
+        }
+
+        
 
         let d1 = document.getElementById("div1")
 
         d1.addEventListener("mouseout", ()=>{
             d1.style.backgroundColor = "yellow"
         })
+
+        // let fname = document.getElementById("fname")
+        // fname.addEventListener("keydown",()=>{
+        // fname.style.backgroundColor="pink"
+        // alert("key pressed")
+
+        // })
+
+        // let fname = document.getElementById("fname")
+        // fname.addEventListener("keyup",()=>{
+        // fname.style.backgroundColor="pink"
+        // alert("key pressed")
+
+        // })
+
+        let fname = document.getElementById("fname")
+        fname.addEventListener("input",(event)=>{             // focus , blur , input
+        fname.style.backgroundColor="pink"
+        document.getElementById("msg").textContent=event.target.value
+
+        // alert("key pressed")
+
+        })
+
+        
 
 
 
